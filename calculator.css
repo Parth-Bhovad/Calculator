@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.input{
+    background-color: black;
+    color: white;
+    width: 40vw;
+    position: absolute;
+    top: 47.4vh;
+}
+
+.input-area{
+    background-color: black;
+    color: white;
+    width: 39.8vw;
+}
+
+.struc{
+    height: 100vh;
+    width: 40vw;
+    background-color: black;
+   
+}
+
+
+
+.control{
+    height: 50vh;
+    width: 40vw;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50vh;
+}
+
+button{
+    height: 10vh;
+    width: 10vw;
+    background-color: black;
+    color: white;
+    
+}
+
+.color{
+    color: rgb(251, 96, 0);
+}
