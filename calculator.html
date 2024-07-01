@@ -5,31 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="struc">
-        <div class="input"><input type="text" placeholder="0" class="input-area"></div>
+        <div class="input-result">
+            <div class="input">0</div>
+            <div class="result"></div>
+        </div>
+        
         <div class="control">
              <div><button class="clear color">AC</button></div>
-             <div><button class="back color">?</button></div>
-             <div><button class="percent color">%</button></div>
-             <div><button class="divide color">/</button></div>
-             <div><button class="seven no">7</button></div>
-             <div><button class="eight no">8</button></div>
-             <div><button class="nine no">9</button></div>
-             <div><button class="multi color">*</button></div>
-             <div><button class="four no">4</button></div>
-             <div><button class="five no">5</button></div>
-             <div><button class="six no">6</button></div>
-             <div><button class="sub color">-</button></div>
-             <div><button class="one no">1</button></div>
-             <div><button class="two no">2</button></div>
-             <div><button class="three no">3</button></div>
-             <div><button class="add color">+</button></div>
+             <div><button class="back color"><i class="fa-regular fa-rectangle-xmark"></i></button></div>
+             <div><button class="percent color calc">%</button></div>
+             <div><button class="divide color calc">/</button></div>
+             <div><button class="seven no calc">7</button></div>
+             <div><button class="eight no calc">8</button></div>
+             <div><button class="nine no calc">9</button></div>
+             <div><button class="multi color calc">*</button></div>
+             <div><button class="four no calc">4</button></div>
+             <div><button class="five no calc">5</button></div>
+             <div><button class="six no calc">6</button></div>
+             <div><button class="sub color calc">-</button></div>
+             <div><button class="one no calc">1</button></div>
+             <div><button class="two no calc">2</button></div>
+             <div><button class="three no calc">3</button></div>
+             <div><button class="add color calc">+</button></div>
              <div><button class="some color">some</button></div>
-             <div><button class="zero no">0</button></div>
+             <div><button class="zero no calc">0</button></div>
             <div><button class="deci color">.</button></div>
-            <div><button class="equal color">=</button></div>
+            <div><button class="equal color ">=</button></div>
         </div>    
     </div>
 </body>

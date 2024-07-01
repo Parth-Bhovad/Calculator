@@ -3,33 +3,46 @@
     padding: 0;
 }
 
-.input{
-    background-color: black;
-    color: white;
-    width: 40vw;
-    position: absolute;
-    top: 47.4vh;
+body{
+    background-color: orange;
 }
 
-.input-area{
+.input-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 40vw;
+    height: 50vh;   
+}
+
+.input{
+    background-color:black;
+    color: white;
+    width: 38vw;
+    padding-left: 5px;
+
+}
+
+.result{
     background-color: black;
     color: white;
-    width: 39.8vw;
+    width: 38vw;
+    padding-left: 5px;
+
 }
 
 .struc{
     height: 100vh;
     width: 40vw;
     background-color: black;
+    margin:auto;
+   
    
 }
-
-
 
 .control{
     height: 50vh;
     width: 40vw;
-    background-color: aqua;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
