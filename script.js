@@ -113,6 +113,7 @@ sciOptsArr.forEach((sciOpt) => {
                mixedStringToNumber(input.innerHTML)
                sinVal = Math.sin(toNumber);
                result.innerHTML = `=${sinVal}`
+               input.innerHTML = '';
                sciOptsInput.innerHTML = `sin<sub>r</sub>(${toNumber})`;
             }
             sinCalc()
@@ -123,6 +124,7 @@ sciOptsArr.forEach((sciOpt) => {
                mixedStringToNumber(input.innerHTML)
                cosVal = Math.cos(toNumber);
                result.innerHTML = `=${cosVal}`
+               input.innerHTML = '';
                sciOptsInput.innerHTML = `cos<sub>r</sub>(${toNumber})`;
             }
             cosCalc()
@@ -133,6 +135,7 @@ sciOptsArr.forEach((sciOpt) => {
                mixedStringToNumber(input.innerHTML)
                tanVal = Math.tan(toNumber);
                result.innerHTML = `=${tanVal}`
+               input.innerHTML = '';
                sciOptsInput.innerHTML = `tan<sub>r</sub>(${toNumber})`;
             }
             tanCalc()
@@ -143,6 +146,7 @@ sciOptsArr.forEach((sciOpt) => {
                mixedStringToNumber(input.innerHTML)
                sqrtVal = Math.sqrt(toNumber);
                result.innerHTML = `=${sqrtVal}`
+               input.innerHTML = '';
                sciOptsInput.innerHTML = `sqrt(${toNumber})`;
             }
             sqrtCalc()
@@ -153,6 +157,7 @@ sciOptsArr.forEach((sciOpt) => {
                mixedStringToNumber(input.innerHTML)
                logVal = Math.log10(toNumber);
                result.innerHTML = `=${logVal}`
+               input.innerHTML = '';
                sciOptsInput.innerHTML = `log<sub>10</sub>(${toNumber})`;
             }
             logCalc()
