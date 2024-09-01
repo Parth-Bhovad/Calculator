@@ -4,7 +4,11 @@
 }
 
 body{
-    background-color: orange;
+    background-color: white;
+}
+
+.sci-opts-input{
+    color: whiteA;
 }
 
 .input-result{
@@ -36,12 +40,11 @@ body{
     width: 40vw;
     background-color: black;
     margin:auto;
-   
-   
-}
+    border: 2px solid orange;
+   }
 
 .control{
-    height: 50vh;
+   min-height: 220px;
     width: 40vw;
     display: flex;
     flex-wrap: wrap;
@@ -54,9 +57,19 @@ button{
     width: 10vw;
     background-color: black;
     color: white;
-    
 }
 
-.color{
-    color: rgb(251, 96, 0);
+.button-moreOptions{
+    height: 8.23vh;
+    width: 8vw;
+    background-color: black;
+    color: white;
+}
+
+.trans{
+    transition: all .3s linear;
+}
+
+.display{
+    display: none;
 }
