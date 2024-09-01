@@ -18,12 +18,12 @@ let clearEvent = () => {
    input.innerHTML = '';
    result.innerHTML = '';
    str = '';
+   sciOptsInput.innerHTML = ``;
 }
 let backEvent = () => {
    let newStr = str.slice(0, eval(str.length - 1));
    str = newStr;
    input.innerHTML = newStr;
-   sciOptsInput.innerHTML = `${newStr}`
 }
 
 let buttonsArray = Array.from(buttons)
@@ -65,10 +65,6 @@ some.addEventListener('click', () => {
    });
    some.classList.add("display");
    someBack.classList.remove("display");
-
-   equal.removeEventListener('click', equalEvent);
-   // clear.removeEventListener('click', clearEvent);
-   // back.removeEventListener('click', backEvent);
 });
 
 
@@ -93,7 +89,6 @@ someBack.addEventListener('click', () => {
    some.classList.remove("display");
 })
 
-let PI = 3.14159265359
 
 const mixedStringToNumber = (val) => {
    mixedSting = val;
@@ -163,20 +158,24 @@ sciOptsArr.forEach((sciOpt) => {
             logCalc()
             break;
 
-            case "fact":
-               function factorial(n) {
-                  let factorialresult = 1;
-                  for (let i = 2; i <= n; i++) {
-                      factorialresult *= i;
-                  }
-                  result.innerHTML = factorialresult;
-              }
-              factorial(input.innerHTML)
-               break;
-
-         default:
-            console.log("default hai");
+         case "fact":
+            const factorial = () => {
+               mixedStringToNumber(input.innerHTML);
+               let factVal = 1;
+               for (let i = 1; i <= toNumber; i++) {
+                  factVal *= i;
+               }
+               result.innerHTML = `=${factVal}`;
+               input.innerHTML = ''
+               sciOptsInput.innerHTML = `fact(${toNumber})`;
+            };
+            factorial()
             break;
       }
    });
 });
+
+document.querySelector('.PI').addEventListener('click', () => {
+   str = str + Math.PI
+   input.innerHTML = str;
+})
