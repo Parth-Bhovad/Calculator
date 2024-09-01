@@ -1,19 +1,19 @@
 let str = "";
 
-let calcs = document.querySelectorAll('.calc');
+let btns = document.querySelectorAll('.btn');
 let buttons = document.querySelectorAll('button');
 let input = document.querySelector('.input');
 let equal = document.querySelector('.equal');
 let result = document.querySelector('.result');
 const clear = document.querySelector('.clear');
-let back = document.querySelector('.back')
+let back = document.querySelector('.back');
 
-let arr = Array.from(calcs);
+let arr = Array.from(btns);
 
-arr.forEach((calc) => {
-   calc.addEventListener('click', (e) => {
+arr.forEach((btn) => {
+   btn.addEventListener('click', (e) => {
       e.target;
-      let inner = calc.innerHTML;
+      let inner = btn.innerHTML;
       str = str + inner;
       input.innerHTML = str;
    })
@@ -22,7 +22,7 @@ arr.forEach((calc) => {
 
 equal.addEventListener('click', () => {
    let ans = eval(str)
-   result.innerHTML = "=" + ans;
+   result.innerHTML = `= ${ans}`;
 })
 
 
@@ -37,4 +37,3 @@ back.addEventListener('click', () => {
    str = newStr;
    input.innerHTML = newStr;
 });
-
